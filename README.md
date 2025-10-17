@@ -4,7 +4,7 @@ Este pequeno projeto tem como objetivo controlar um LED usando um botão.
 Quando o botão é pressionado, o LED alterna entre as cores.
 É um exercício básico para aprender sobre:
 
-![LED ligado e apagado](projeto.jpg)
+![LED ligado e apagado](projeto.png)
 
 Leitura de pinos digitais
 
