@@ -46,6 +46,8 @@ void keyUp(){
 void setup()
 {
   pinMode(ledred, OUTPUT);
+  pinMode(ledgreen, OUTPUT);
+  pinMode(ledblue, OUTPUT);
   pinMode(pushButton, INPUT);
 }
 
