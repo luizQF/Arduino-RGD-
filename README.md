@@ -1,8 +1,10 @@
 Descrição
 
 Este pequeno projeto tem como objetivo controlar um LED usando um botão.
-Quando o botão é pressionado, o LED liga; ao soltar, o LED desliga.
+Quando o botão é pressionado, o LED alterna entre as cores.
 É um exercício básico para aprender sobre:
+
+![LED ligado e apagado](projeto.jpg)
 
 Leitura de pinos digitais
 
@@ -16,7 +18,7 @@ Materiais
 
 1 x Arduino Uno (ou similar)
 
-1 x LED
+1 x LED RGB
 
 1 x Resistor 220Ω (para o LED)
 
@@ -32,7 +34,7 @@ Montagem
 
 Conecte o LED:
 
-Anodo (perna maior) → pino digital 7 do Arduino através do resistor de 220Ω
+RED, GREEN, BLUE nas respectivas portas digitais
 
 Catodo (perna menor) → GND
 
