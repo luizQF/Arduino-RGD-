@@ -4,9 +4,8 @@
 #define pushButton 4
 #define maximum 3
 
-int btnclicado = 0;
-int btnliberado = 0;
-int ciclo = 0;
+unsigned char btnclicado = 0;
+unsigned char ciclo = 0;
 
 void trocarLed(){
   if (ciclo == maximum){
@@ -44,7 +43,7 @@ void setup()
 
 void loop()
 {
-  
+
   if (digitalRead(pushButton) == HIGH){
     btnclicado = 1;
   }else if ( btnclicado ){
