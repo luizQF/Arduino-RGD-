@@ -7,31 +7,25 @@
 int btnclicado = 0;
 int btnliberado = 0;
 int ciclo = 0;
+
 void trocarLed(){
-  if(ciclo == maximum){
+  if (ciclo == maximum){
     ciclo = 0;
   }
-                       
-  if(ciclo == 0){
 
-	digitalWrite(ledred, HIGH);
-    digitalWrite(ledgreen, LOW);
-    digitalWrite(ledblue, LOW);
-  }
-                       
-  if(ciclo == 1){
+  digitalWrite(ledred, LOW);
+  digitalWrite(ledgreen, LOW);
+  digitalWrite(ledblue, LOW);
 
-	digitalWrite(ledred, LOW);
+  if (ciclo == 0){
+	  digitalWrite(ledred, HIGH);
+  }else if(ciclo == 1){
   	digitalWrite(ledgreen, HIGH);
-    digitalWrite(ledblue, LOW);
-  }
-  if(ciclo == 2){
- 
-	digitalWrite(ledred, LOW);
-    digitalWrite(ledgreen, LOW);
+  }else if(ciclo == 2){
     digitalWrite(ledblue, HIGH);
   }
-  ciclo ++;
+
+  ciclo++;
 }
 
 void keyUp(){
