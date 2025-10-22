@@ -29,11 +29,8 @@ void trocarLed(){
 }
 
 void keyUp(){
-  if((btnclicado == 1) and (btnliberado == 1)){
-    btnclicado = 0;
-    btnliberado = 0;
-    trocarLed();
-  }
+  trocarLed();
+  btnclicado = 0;
   
 }
 
@@ -47,13 +44,11 @@ void setup()
 
 void loop()
 {
-  if(digitalRead(pushButton) == HIGH){
-    btnclicado = 1;
-    btnliberado = 0;
-  }else{
-    btnliberado = 1;
-  }
   
-  keyUp();
+  if (digitalRead(pushButton) == HIGH){
+    btnclicado = 1;
+  }else if ( btnclicado ){
+    keyUp(); 
+  }
   
 }
